@@ -35,6 +35,4 @@ kubectl --namespace monitor get pods -l "release=kube-prometheus-stack"
 To get password
 kubectl --namespace monitor get secrets kube-prometheus-stack-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
 
-expose as parinta expained from UI   3000
-
  kubectl get svc --namespace monitor
